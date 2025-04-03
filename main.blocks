@@ -1,0 +1,476 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="]H=TxXR)h:Sq`+NY_dnz">Player</variable><variable type="KIND_SpriteKind" id="@F$[*]9gs,6}$9II+~DD">Projectile</variable><variable type="KIND_SpriteKind" id="u*UttaIdO5sqVTk+*dEX">Food</variable><variable type="KIND_SpriteKind" id="5=t{AtX2HAxW`lVGK:as">Enemy</variable><variable type="KIND_SpriteKind" id="lq4MLE9nZzotM4^o}$,+">extra</variable><variable id="=Y@7LN2iv1}q]+CG;w6M">mySprite</variable><variable id=".[rpVpIGZeB^*GRZkV`p">Level</variable><variable id="ely_k]v4NqR*x//)!^?Q">projectile</variable><variable id="68mYurj$F9[~b+zQyUc2">mySprite2</variable><variable id="f1r`MpF{V^Fe7[W./f3T">Storyteller</variable><variable id=";DoEzG:u%KiSfTsd[%||">sprite</variable><variable id="7@.ipojCQIc;#p9KBh9|">anim</variable></variables><block type="keyonevent" id=";Rd3Ah8?g^6`:g;};LiC" x="372" y="-117"><field name="button">controller.B</field><field name="event">ControllerButtonEvent.Pressed</field></block><block type="pxt-on-start" id="joSQ_7o*pJn~`5gEcC/D" x="-433" y="-24"><statement name="HANDLER"><block type="arcade_story_start_cutscene" id="A|=0YD*hq41vq)d)Ix,*"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="r/kze)ORtsCEeb,u%WcF"><value name="color"><shadow type="colorindexpicker" id="IF[z~hy)%aKM=c[y)|J4"><field name="index">0</field></shadow></value><next><block type="variables_set" id="}(cR]f=gBxfMez8ttX+$"><field name="VAR" id="f1r`MpF{V^Fe7[W./f3T">Storyteller</field><value name="VALUE"><shadow type="math_number" id="(Q*p2!+T`)SYy+I?fUUp"><field name="NUM">0</field></shadow><block type="spritescreate" id="ZY{_8/U.nAvZ%4U^azfj"><value name="img"><shadow type="screen_image_picker" id="h(!Z;#F*,lDFDTZJ*+^x"><field name="img">assets.image`0`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="Y8);_OF-W+pd#7sa8i%?"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos" id="VCGXGO.(Z4{cLGV}aL:#"><value name="sprite"><block type="variables_get" id="G}8UJh=^%sQ;,T7-kyGZ"><field name="VAR" id="f1r`MpF{V^Fe7[W./f3T">Storyteller</field></block></value><value name="x"><shadow type="positionPicker" id="(ynRhjEh:b-5x*G6p/9D"><field name="index">150</field></shadow></value><value name="y"><shadow type="positionPicker" id="=1/Nlnx._tvxAD|x*_#{"><field name="index">50</field></shadow></value><next><block type="story_sprite_move_to_location" id="D7nM4!T@qqfEY]5!$Q06"><value name="sprite"><block type="variables_get" id="$XfWJ!@9Z9KIGlCEgI8#"><field name="VAR" id="f1r`MpF{V^Fe7[W./f3T">Storyteller</field></block></value><value name="x"><shadow type="math_number" id="BUYIn#/n2B:+vlEi_Ey]"><field name="NUM">80</field></shadow></value><value name="y"><shadow type="math_number" id="/oU)9_J2V4?+S|NLz+^-"><field name="NUM">50</field></shadow></value><value name="speed"><shadow type="math_number" id="Z)ecQf}~v9|gxO7*R1-h"><field name="NUM">100</field></shadow></value><next><block type="story_print_dialog" id="VcvD^mbN1W?hYud4JlWk"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="3" _input_init="true"></mutation><field name="speed">story.TextSpeed.Normal</field><value name="text"><shadow type="text" id="AtO4c}5rA`-UK!L%Ey-W"><field name="TEXT">This is a world where magic exists.</field></shadow></value><value name="x"><shadow type="math_number" id="b9Tx`K;h,DL22etb5`RP"><field name="NUM">80</field></shadow></value><value name="y"><shadow type="math_number" id="4r9`}#ZEg7hFosMZ7=6p"><field name="NUM">90</field></shadow></value><value name="width"><shadow type="math_number" id="JVAq*c}0y$2T}KvGq`W7"><field name="NUM">150</field></shadow></value><value name="height"><shadow type="math_number" id="-*:JV8Z.*PJE;j.VASKH"><field name="NUM">50</field></shadow></value><value name="foreground"><shadow type="colorindexpicker" id="*C.o*_[RifreHEu.X_+I"><field name="index">15</field></shadow></value><value name="background"><shadow type="colorindexpicker" id="!!k]Uw?d7I7@/,a7pys*"><field name="index">13</field></shadow></value><next><block type="story_print_dialog" id="CwWaXiWySE?,`$WgOt]h"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="3" _input_init="true"></mutation><field name="speed">story.TextSpeed.Normal</field><value name="text"><shadow type="text" id="wGY$82*-nXJRwPWu4r!?"><field name="TEXT">Due to the excessive use of magic the world has, beings are made of magic energy.</field></shadow></value><value name="x"><shadow type="math_number" id="WuT7|ogl0=O?r@p^M)$;"><field name="NUM">80</field></shadow></value><value name="y"><shadow type="math_number" id="*s{nTVPY]FRXRvE09YE`"><field name="NUM">90</field></shadow></value><value name="width"><shadow type="math_number" id="%=|n}gsz.UYhX8rr]tTu"><field name="NUM">150</field></shadow></value><value name="height"><shadow type="math_number" id="M~x{dK/u%w/v0r1H$7Eq"><field name="NUM">50</field></shadow></value><value name="foreground"><shadow type="colorindexpicker" id="jA=YrXPb8V[H/mzG@GVe"><field name="index">15</field></shadow></value><value name="background"><shadow type="colorindexpicker" id="t=|J({PhX%n~uxxLxBDw"><field name="index">13</field></shadow></value><next><block type="story_print_dialog" id="voR1f,+is%#kLLKVe{]Z"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="3" _input_init="true"></mutation><field name="speed">story.TextSpeed.Normal</field><value name="text"><shadow type="text" id="BEi*L#9mh(d1k7T4{j2}"><field name="TEXT">Hunters are hired to execute these beings to maintain safety to the public.</field></shadow></value><value name="x"><shadow type="math_number" id="`kX8+z{A0lq8{W%m[*$$"><field name="NUM">80</field></shadow></value><value name="y"><shadow type="math_number" id="h+ruyD+PAVVt_UHzf^8K"><field name="NUM">90</field></shadow></value><value name="width"><shadow type="math_number" id="RvoDiyB$sw`OTQYN:=:*"><field name="NUM">150</field></shadow></value><value name="height"><shadow type="math_number" id="twPA!yv_!7-T-nC@x[q."><field name="NUM">50</field></shadow></value><value name="foreground"><shadow type="colorindexpicker" id="51M8iX%3cT-g!u,?h34~"><field name="index">15</field></shadow></value><value name="background"><shadow type="colorindexpicker" id="Rwtt~zSr8-%Om*M1icv."><field name="index">13</field></shadow></value><next><block type="story_print_dialog" id="B=Oq|MieqM{wNYZ{Fphx"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="3" _input_init="true"></mutation><field name="speed">story.TextSpeed.Normal</field><value name="text"><shadow type="text" id="CO:H5hVWT=-7@[4WH%(t"><field name="TEXT">One of these hunters goes by the name of &lt;Geon&gt;.</field></shadow></value><value name="x"><shadow type="math_number" id="]i,nqNh`$k8p^U*L._b;"><field name="NUM">80</field></shadow></value><value name="y"><shadow type="math_number" id="a#TOH?KjiC}IwWc+9uFt"><field name="NUM">90</field></shadow></value><value name="width"><shadow type="math_number" id="}-=3~qd=Qte#|ppZ9_ZN"><field name="NUM">150</field></shadow></value><value name="height"><shadow type="math_number" id="+Tn6T_#BeoIyk1)gt{Wo"><field name="NUM">50</field></shadow></value><value name="foreground"><shadow type="colorindexpicker" id="64f)8uV1dTJ@C72F$;We"><field name="index">15</field></shadow></value><value name="background"><shadow type="colorindexpicker" id=":vC6@QSsWRH9Vho6,I)S"><field name="index">13</field></shadow></value><next><block type="spritedestroy2" id="5#sAGcIXe*7]W70Z-OU8"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="effect">effects.spray</field><value name="sprite"><block type="variables_get" id="!nD?T046e/zsAx!x93rx"><field name="VAR" id="f1r`MpF{V^Fe7[W./f3T">Storyteller</field></block></value><value name="duration"><shadow type="timePicker" id="?ZheNI}^[]nd4H,6W#V-"><field name="ms">500</field></shadow></value><next><block type="variables_set" id="`[wFH:kCAHCO^m_YYyQB"><field name="VAR" id="=Y@7LN2iv1}q]+CG;w6M">mySprite</field><value name="VALUE"><shadow type="math_number" id="nZP`~vbdq-mQ6m7sV~R5"><field name="NUM">0</field></shadow><block type="spritescreate" id="/Cobo(,%deM9gOall]xV"><value name="img"><shadow type="screen_image_picker" id="UPzE]zc7`Vi~9(6!rEPn"><field name="img">img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f f d d f f c c f . 
+. f f b f d d f b f f . . 
+. f d 1 f d d f 1 d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+d d f f 1 f f 1 f f d d . 
+d d f f 1 f f 1 f f d d . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="dAC*FcmAM)*amsSLRmtz"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="Hi|EHLo8o)_+ejCzGQ.T"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="#$B$d+h+C+/t_G_sMgm%"><field name="VAR" id="=Y@7LN2iv1}q]+CG;w6M">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="+9)m-@;?Il}TO_}[(SE$"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="DS]|07M|NNY85YaDXMD`"><field name="speed">100</field></shadow></value><next><block type="set_current_tilemap" id="5PSWPDHQT@B8:a2j^!!-"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="r~j2++w[K)S66;!dJCqD"><field name="tilemap">tilemap`beginning`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data></shadow></value><next><block type="camerafollow" id="I*b]K*FDWpv-5sGlTcmf"><value name="sprite"><block type="variables_get" id="3qAK3YV}0b+q~}8?}`tD"><field name="VAR" id="=Y@7LN2iv1}q]+CG;w6M">mySprite</field></block></value><next><block type="gamesetbackgroundimage" id="O;,Jn~e^Hu*zaS]]cBV?"><value name="img"><shadow type="background_image_picker" id="x8As,hA,i(6,l71igY}v"><field name="img">img`
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+................................................................................................................................................................
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow><block type="background_image_picker" id="PW7#7*e{q4N_MavP|1Uo"><field name="img">img`
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+777777777777777777777777777777
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></block></value><next><block type="arcade_story_cancel_cutscene" id="$[Sm6.2LBTp*cS*gzk*v"></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement><next><block type="arcade_story_start_cutscene" id="pLgfq_+yt^oZPJy?gf*|"><statement name="HANDLER"><block type="arcade_story_print_character_text" id="ayBR?wEUkVCrucD3p1?T"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="text"><shadow type="text" id="a}r,DgZpb=?~ac)s95mv"><field name="TEXT">BZT BZT (press B to use)</field></shadow></value><value name="label"><shadow type="text" id="x~t]K?IJyr(Ha.%JOf5="><field name="TEXT">Phone</field></shadow></value><next><block type="pxt_pause_until" id="`+D47j@1h%eYL[2-uu|P"><value name="PREDICATE"><shadow type="logic_boolean" id="mAvRZ-Hvz)/S=?_2Jp2]" disabled-reasons="MANUALLY_DISABLED"><field name="BOOL">TRUE</field></shadow><block type="keyispressed" id="3}I-f4OJV#ubeo/v2AuD"><field name="button">controller.B</field></block></value><next><block type="run_image_animation" id="E%q3cH}VW%g{L[,mnUjT"><value name="sprite"><block type="variables_get" id="M4r?A}*(gc{$;0W#3ap?"><field name="VAR" id="=Y@7LN2iv1}q]+CG;w6M">mySprite</field></block></value><value name="frames"><shadow type="animation_editor" id="efp#S%zFjM8p~igC#ZD;"><field name="frames">[img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f d d d d f c c f . 
+. f f f f d d f f f f f . 
+. f d 1 f d d f 1 d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f f f . 
+d d f f 1 f f 1 f f d d . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f d d d d f c c f . 
+. f f f f d d f f f f f . 
+. f d 1 f d d 1 f d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f f f . 
+d d f f 1 f f 1 f f d d . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f d d d d f c c f . 
+. f f f f d d f f f f f . 
+. f d 1 f d d 1 f d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f . . 
+f f f f 1 f f 1 f f f . . 
+d d f f 1 f f 1 f f d . . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f d d d d f c c f . 
+. f f f f d d f f f f f . 
+. f d 1 f d d 1 f d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f f f . 
+d d f f 1 f f 1 f f d d . 
+. . . f f f f f f . f f . 
+. . . f f . . f f . f f . 
+`,img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f d d d d f c c f . 
+. f f f f d d f f f f f . 
+. f d 1 f d d 1 f d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f d d . 
+d d f f 1 f f 1 f f f f . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f d d d d f c c f . 
+. f f f f d d f f f f f f 
+. f d 1 f d d 1 f d f f f 
+. f d d d d d d d d f f d 
+. f f f d f f d f f f d d 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f f f . 
+d d f f 1 f f 1 f f f f . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`]</field><data>{"commentRefs":[],"fieldData":{"frames":null}}</data></shadow></value><value name="frameInterval"><shadow type="timePicker" id="s-)-qVh9p@`de6KM?KSR"><field name="ms">200</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="4@=dZdS+Y4-y[L#)b[1_"><field name="on">false</field></shadow></value></block></next></block></next></block></statement></block></next></block></statement></block><block type="keyonevent" id="$g1fv/IG}MpNfaK:34pC" x="0" y="0"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="story_clear_all_text" id="h#an*sA/|tN=+CAxLFw*"></block></statement></block><block type="keyonevent" id=":9KLR^OKePsX}x?LB0pg" x="-1159" y="205"><field name="button">controller.anyButton</field><field name="event">ControllerButtonEvent.Released</field><statement name="HANDLER"><block type="stop_animations" id="8F9zeRi5+s?gmr?oZ]W,"><field name="type">animation.AnimationTypes.MovementAnimation</field><value name="sprite"><block type="variables_get" id="K7A^}r#rH7rV1b-*P.Q_"><field name="VAR" id="=Y@7LN2iv1}q]+CG;w6M">mySprite</field></block></value></block></statement></block><block type="keyonevent" id="j_TYVo_v9}]0^p1C=#@-" x="-1409" y="320"><field name="button">controller.up</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="(u*n~/M[Ru?Yaw?|PKrM"><value name="sprite"><block type="variables_get" id="0dH^3p(!grj?m^1PMxp4"><field name="VAR" id="=Y@7LN2iv1}q]+CG;w6M">mySprite</field></block></value><value name="frames"><shadow type="animation_editor" id="@q/r@s}nU_vBZJXsbbWf"><field name="frames">[img`
+. . . . . . . . . . . . . 
+. . f f f f f . . . . . . 
+. f f c c c c f . . . . . 
+f f c c c c c c f f . . . 
+f f c c f c c c c c f . . 
+f f f f f c c c c c f . . 
+. f f f f c c f c c f . . 
+. f f f f f f f f f f . . 
+. f f f f f f f f f f . . 
+. f f f f f f f f f f . . 
+. f f f f f f f f f f . . 
+f f f f f f f f f f f f . 
+f f f f f f f f f f f f . 
+d d d f f f f f f d d d . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . f f f f f . . . . . . 
+. f f c c c c f . . . . . 
+f f c c c c c c f f . . . 
+f f c c f c c c c c f . . 
+f f f f f c c c c c f . . 
+. f f f f c c f c c f . . 
+. f f f f f f f f f f . . 
+. f f f f f f f f f f . . 
+. f f f f f f f f f f . . 
+. f f f f f f f f f f f . 
+f f f f f f f f f f f f . 
+f f f f f f f f f d d d . 
+d d d f f f f f f . . . . 
+. . . f f f f f f . . . . 
+. . . f f f . . . . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . f f f f f . . . . . . 
+. f f c c c c f . . . . . 
+f f c c c c c c f f . . . 
+f f c c f c c c c c f . . 
+f f f f f c c c c c f . . 
+. f f f f c c f c c f . . 
+. f f f f f f f f f f . . 
+. f f f f f f f f f f . . 
+. f f f f f f f f f f . . 
+f f f f f f f f f f f . . 
+f f f f f f f f f f f f . 
+d d d f f f f f f f f f . 
+. . . f f f f f f d d d . 
+. . . f f f f f f . . . . 
+. . . . . . f f f . . . . 
+`]</field><data>{"commentRefs":[],"fieldData":{"frames":null}}</data></shadow></value><value name="frameInterval"><shadow type="timePicker" id="#/g32|{s![-`]Kj+Z*d["><field name="ms">500</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="n3:pAmZ_}DMLmr$_RP`$"><field name="on">true</field></shadow></value></block></statement></block><block type="keyonevent" id="+z|seQs/jq+tK:Ta%161" x="-1117" y="417"><field name="button">controller.left</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="0dNH@Q]O/f,lm)b4DNP!"><value name="sprite"><block type="variables_get" id="DBzA}3wwmp@k+KGW$F2$"><field name="VAR" id="=Y@7LN2iv1}q]+CG;w6M">mySprite</field></block></value><value name="frames"><shadow type="animation_editor" id="nWzgd0?=]`iI-^sWswhC"><field name="frames">[img`
+. . . . . . . . . . . . . 
+. . . . f f f f f f . . . 
+. . . f f f f f f f f f . 
+. . f f f c f f f f f f . 
+. f f f c f f f c f f f . 
+. f c c f f f c c f f c . 
+. f f f f d f f f f c c . 
+. . . f d d f f f f f f . 
+. . . f d d f b d d d f . 
+. . . f d d f 1 d d d f . 
+. . . f f d d d d f f f . 
+. . . f f f d d d f f f . 
+. . . f 1 f f f f d d f . 
+. . f f 1 f f f f d d f . 
+. . f f f f f f f f f f . 
+. . . f f f . . . f f . . 
+`,img`
+. . . . . f f f f f . . . 
+. . . f f f f f f f f f . 
+. . f f f c f f f f f f . 
+. f f f c f f f c f f f . 
+. f c c f f f c c f f c . 
+. f f f f d f f f f c c . 
+. . . f d d f f f f f f . 
+. . . f d d f b f d d f . 
+. . . f d d f 1 d d d f . 
+. . . f f d d d d f f f . 
+. . . f f f d d d d f . . 
+. . . f 1 f f f f f f . . 
+. . . f 1 f f f d d f . . 
+. . . f 1 f f f d d f . . 
+. . . . f f f f f f . . . 
+. . . . . . f f f . . . . 
+`]</field><data>{"commentRefs":[],"fieldData":{"frames":null}}</data></shadow></value><value name="frameInterval"><shadow type="timePicker" id="^1d@r+8EwpabkCQCr9{+"><field name="ms">200</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="I}C8hj`6zrSx={3#i{x("><field name="on">true</field></shadow></value></block></statement></block><block type="keyonevent" id="W,M],9Seh|KGR#5Ud6J*" x="-808" y="517"><field name="button">controller.right</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="a~R^P:ojxh)MQRJLCh9x"><value name="sprite"><block type="variables_get" id="+^r(IO#^S0eqxW8Pr-O0"><field name="VAR" id="=Y@7LN2iv1}q]+CG;w6M">mySprite</field></block></value><value name="frames"><shadow type="animation_editor" id="atyF0?|?jddDOhK{0pa1"><field name="frames">[img`
+. . . . . . . . . . . . . 
+. . . f f f f f f . . . . 
+. f f f f f f f f f . . . 
+. f f f f f f c f f f . . 
+. f f f c f f f c f f f . 
+. c f f c c f f f c c f . 
+. c c f f f f d f f f f . 
+. f f f f f f d d f . . . 
+. f d d d b f d d f . . . 
+. f d d d 1 f d d f . . . 
+. f f f d d d d f f . . . 
+. f f f d d d f f f . . . 
+. f d d f f f f 1 f . . . 
+. f d d f f f f 1 f f . . 
+. f f f f f f f f f f . . 
+. . f f . . . f f f . . . 
+`,img`
+. . . f f f f f . . . . . 
+. f f f f f f f f f . . . 
+. f f f f f f c f f f . . 
+. f f f c f f f c f f f . 
+. c f f c c f f f c c f . 
+. c c f f f f d f f f f . 
+. f f f f f f d d f . . . 
+. f d d f b f d d f . . . 
+. f d d d 1 f d d f . . . 
+. f f f d d d d f f . . . 
+. . f d d d d f f f . . . 
+. . f f f f f f 1 f . . . 
+. . f d d f f f 1 f . . . 
+. . f d d f f f 1 f . . . 
+. . . f f f f f f . . . . 
+. . . . f f f . . . . . . 
+`]</field><data>{"commentRefs":[],"fieldData":{"frames":null}}</data></shadow></value><value name="frameInterval"><shadow type="timePicker" id="JuoK-tSjo6m+1!V{K$!y"><field name="ms">200</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="ZJ*~afjxP2f,ewv;{E*L"><field name="on">true</field></shadow></value></block></statement></block><block type="keyonevent" id="Bw6/h*DayS[TE+)IDF3$" x="-1411" y="663"><field name="button">controller.down</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="IQ3:y[iLCDJ?gw$CC|yR"><value name="sprite"><block type="variables_get" id="-e_!.I3m@S$fEns1og^r"><field name="VAR" id="=Y@7LN2iv1}q]+CG;w6M">mySprite</field></block></value><value name="frames"><shadow type="animation_editor" id="M%w~Y.T`W_5Unm7sR%hc"><field name="frames">[img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f f d d f f c c f . 
+. f f b f d d f b f f f . 
+. f d 1 f d d f 1 d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f f f . 
+d d f f 1 f f 1 f f d d . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f f d d f f c c f . 
+. f f b f d d f b f f f . 
+. f d 1 f d d f 1 d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f f f . 
+d d f f 1 f f 1 f f d d . 
+. . . f f f f f f . . . . 
+. . . f f . . . . . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f f d d f f c c f . 
+. f f b f d d f b f f f . 
+. f d 1 f d d f 1 d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f f f . 
+d d f f 1 f f 1 f f d d . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f f d d f f c c f . 
+. f f b f d d f b f f f . 
+. f d 1 f d d f 1 d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f f f . 
+d d f f 1 f f 1 f f d d . 
+. . f f f f f f f . . . . 
+`,img`
+. . . . . . . . . . . . . 
+. . . . . . . . . . . . . 
+. . . . . . f f f f . . . 
+. . . . f f f c f f f . . 
+. . f f f f c c f f f c . 
+. f f c f f f f f f f c . 
+. c c f f f d d f f c c . 
+. f f f f d d f f c c f . 
+. f f b f d d f b f f f . 
+. f d 1 f d d f 1 d f . . 
+. f d d d d d d d d f . . 
+. f f f d f f d f f f . . 
+f f f f f f f f f f f f . 
+f f f f 1 f f 1 f f f f . 
+d d f f 1 f f 1 f f d d . 
+. . . f f f f f f f . . . 
+`]</field><data>{"commentRefs":[],"fieldData":{"frames":null}}</data></shadow></value><value name="frameInterval"><shadow type="timePicker" id="7ox,JN,`dZMC#=rmBk6="><field name="ms">200</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="$=P|*aMgk5tYiz#~/=$w"><field name="on">true</field></shadow></value></block></statement></block></xml>

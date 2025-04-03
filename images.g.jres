@@ -1,0 +1,28 @@
+{
+    "image1": {
+        "data": "hwQNABAAAAAAAAAAAPDfAADw/////98AAP//3d3//wAA/9/d3f///wD//9/d////8P/f3d8fEQ/w/9/d////D/D//9/fHxH/8P/f3d3////w/9/d3f//APD//////98AAAAAAADw3wAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Geon"
+    },
+    "image2": {
+        "data": "hwQYABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8NAAAAAAAA//8P//8NAAAAAAD//738//8PAAAAAPD/3929////AAAAAP//340YzP/PAAAA8P//3WEZvf/PDAAA8P//HdER+///DAAA8P/fHdERsf//DAAA////3WEZ+///DAAA////340Yzf/PDAAA////3929//8PAAAAAP///738//8NAAAAAAAA//8P//8NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Death"
+    },
+    "image3": {
+        "data": "hwQeAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8P//AAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAPD///8AAAAAAAAAAAAAAAD/////AAAAAAD/DwAAAAAA/////wAAAAAA//8AAAAAAP////8AAAAAAP///w8AAPD/////AAAAAPD/////AADw/////wAAAPD//+/e/wAA8P////8AAADw///u3v3/AP//////AAAA8P//7t7d/f///////wAAAP///+7e3f////////8AAAD////u3t3//9////8RAAAA////7t7d3//f/f///wAAAP///+7e3d//3/3///8AAAD////u3t3f/9/9////AAAA////7t7d///f////EQAAAP///+7e3f3///////8AAADw///u3v3/D///////AAAAAPD/797/AADw/////wAAAADw////DwAA8P////8AAAAA8P///w8AAPD/////AAAAAAD//wAAAADw/////wAAAAAA/w8AAAAAAP////8AAAAAAP8PAAAAAADw////AAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAADw//8AAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAAAAAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "0"
+    },
+    "song1": {
+        "data": "0078000408020100001c00010a006400f4016400000400000000000000000000000000050000043c0000000400012008000c0001190c001000011910001400011918001c00012020002400011e24002800011d28002c00011e30003400012038003c000119",
+        "mimeType": "application/mkcd-song",
+        "displayName": "Melody1",
+        "namespace": "mySongs."
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
